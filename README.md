@@ -1,2 +1,0 @@
-# NavioWeb
-Primer Parcial Web 
