@@ -1,0 +1,18 @@
+#fetcher > div:nth-child(1) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#fetcher > div:nth-child(1) > span {
+  display: block;
+}
+
+#fetcher > div:nth-child(1) > span:nth-child(1) {
+  font-size: 2em;
+}
+
+#fetcher > div:nth-child(1) > span:nth-child(2) {
+  color: gray;
+}
