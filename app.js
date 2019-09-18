@@ -8,7 +8,7 @@ const logger = require('morgan');
 const settings = require('./settings');
 
 const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
+const urlsRouter = require('./routes/urls');
 
 const app = express();
 
@@ -21,7 +21,7 @@ app.use(cors({ origin: settings.origins }));
 
 // Routes
 app.use('/api', indexRouter);
-app.use('/api/users', usersRouter);
+app.use('/api/urls', urlsRouter);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => next(createError(404)));

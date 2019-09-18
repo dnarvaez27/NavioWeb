@@ -1,7 +1,7 @@
 module.exports = {
   mongo: {
-    uri: 'mongodb://localhost:27017',
-    db: 'icfes_db'
+    uri: process.env.MONGODB_URI || 'mongodb://localhost:27017',
+    db: 'navio_urls'
   },
   // origins(origin, callback) {
   //   const whitelist = ['http://localhost:3001'];
@@ -11,5 +11,6 @@ module.exports = {
   //     callback(new Error('Not allowed by CORS'));
   //   }
   // }
-  origins: ''
+  origins: 'http://localhost:3000',
+  backend: 'http://localhost:3001'
 };
