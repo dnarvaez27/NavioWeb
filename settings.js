@@ -1,7 +1,7 @@
 module.exports = {
   mongo: {
     uri: process.env.MONGODB_URI || 'mongodb://localhost:27017',
-    db: 'navio_urls'
+    db: 'heroku_mcrm2p4c'
   },
   // origins(origin, callback) {
   //   const whitelist = ['http://localhost:3001'];

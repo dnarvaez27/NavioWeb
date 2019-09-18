@@ -83,7 +83,7 @@ const functions = {
 const execQuery = async (func, collection_name, query, ...args) => {
   return new Promise((resolve, reject) => {
     doTry(reject, () => {
-      MongoClient.connect(url, { useNewUrlParser: true }, (err, client) => {
+      MongoClient.connect(url, { useNewUrlParser: true, useUnifiedTopology: true }, (err, client) => {
         if (err) throw err;
         func(resolve, reject, client.db(dbName), collection_name, query, ...args);
         client.close();
